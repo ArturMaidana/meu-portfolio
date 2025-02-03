@@ -27,7 +27,7 @@ export default function Inicio() {
               Contrate-me
             </Link>
             <Link
-              href="#projetos"
+              href="#projects"
               className="border border-white/20 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-colors"
             >
               Meus Trabalhos

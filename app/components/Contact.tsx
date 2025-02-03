@@ -10,20 +10,23 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const form = e.currentTarget; // Armazena a referência do formulário antes do await
+    const form = e.currentTarget;
     const formData = new FormData(form);
     formData.append("_subject", "Nova mensagem do portfólio!");
     formData.append("_captcha", "false");
 
-    const res = await fetch("https://formsubmit.co/seuemail@email.com", {
-      method: "POST",
-      body: formData,
-    });
+    const res = await fetch(
+      "https://formsubmit.co/arturmaidana2712@gmail.com",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     if (res.ok) {
       setShowPopup(true);
       setTimeout(() => setShowPopup(false), 3000);
-      form.reset(); // Agora sempre terá referência válida
+      form.reset();
     }
 
     setTimeout(() => setIsSubmitting(false), 5000);

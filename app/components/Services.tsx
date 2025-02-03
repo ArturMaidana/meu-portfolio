@@ -3,7 +3,9 @@ import {
   LayoutTemplate,
   Lightbulb,
   Palette,
-  Search,
+  Figma,
+  SearchCode,
+  TabletSmartphone,
   FlaskRound as Flask,
 } from "lucide-react";
 
@@ -22,9 +24,12 @@ export default function Services() {
 
       <div className="grid md:grid-cols-3 gap-8">
         {[
-          { icon: <Search className="w-8 h-8" />, title: "WEB DEVELOPER" },
-          { icon: <Flask className="w-8 h-8" />, title: "UI/UX DESIGN" },
-          { icon: <Gift className="w-8 h-8" />, title: "MOBILE DEVELOPER" },
+          { icon: <SearchCode className="w-8 h-8" />, title: "WEB DEVELOPER" },
+          { icon: <Figma className="w-8 h-8" />, title: "UI/UX DESIGN" },
+          {
+            icon: <TabletSmartphone className="w-8 h-8" />,
+            title: "MOBILE DEVELOPER",
+          },
           {
             icon: <LayoutTemplate className="w-8 h-8" />,
             title: "SOFTWARE ARCHITECTURE",
@@ -37,7 +42,7 @@ export default function Services() {
         ].map((service, index) => (
           <div
             key={index}
-            className="bg-zinc-900 p-8 rounded-lg text-center group hover:bg-zinc-800 transition-colors"
+            className="bg-white bg-opacity-5 p-8 rounded-lg text-center group hover:bg-zinc-800 transition-colors"
           >
             <div className="w-16 h-16 mx-auto bg-amber-500/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500/20 transition-colors">
               <div className="text-amber-500">{service.icon}</div>

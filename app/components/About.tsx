@@ -46,7 +46,7 @@ export default function About() {
 
           <div className="pt-4">
             <div className="flex items-center gap-4">
-              <span className="text-amber-500 text-4xl font-bold">25</span>
+              <span className="text-amber-500 text-4xl font-bold ">25</span>
               <span className="text-white/80">Projetos realizados</span>
             </div>
           </div>

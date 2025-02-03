@@ -52,10 +52,13 @@ export default function About() {
           </div>
 
           <Link
-            href="/cv.pdf"
+            href="/Curriculo.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-amber-500 text-black px-8 py-3 rounded-full font-medium hover:bg-amber-400 transition-colors mt-6"
           >
-            DOWNLOAD CV
+            Donwload Currículo
           </Link>
         </div>
       </div>

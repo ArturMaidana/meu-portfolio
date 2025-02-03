@@ -20,13 +20,14 @@ export default function Inicio() {
           <p className="text-3xl text-white/80">Um Web Designer Freelancer</p>
           <div className="flex gap-4 pt-4">
             <Link
-              href="#contato"
+              href="https://www.linkedin.com/in/artur-maidana/"
+              target="_blank"
               className="bg-amber-500 text-black px-8 py-3 rounded-full font-medium hover:bg-amber-400 transition-colors"
             >
               Contrate-me
             </Link>
             <Link
-              href="#trabalhos"
+              href="#projetos"
               className="border border-white/20 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-colors"
             >
               Meus Trabalhos

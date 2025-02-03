@@ -77,7 +77,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-white/80">
                 <MapPin className="text-amber-500" />
-                1409 Princesa do Sol, Várzea Grande, Cuiabá, Mato grosso, BR
+                Cuiabá, Mato grosso, Brasil
               </li>
               <li className="flex items-center gap-3 text-white/80">
                 <Phone className="text-amber-500" />

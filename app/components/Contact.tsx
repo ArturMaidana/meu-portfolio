@@ -47,7 +47,7 @@ export default function Contact() {
               type="submit"
               className="w-full bg-amber-500 text-black px-8 py-3 rounded-lg font-medium hover:bg-amber-400 transition-colors"
             >
-              ENVIAR MENSAGEM
+              Enviar mensagem
             </button>
           </form>
         </div>

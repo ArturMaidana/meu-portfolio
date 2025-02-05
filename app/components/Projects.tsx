@@ -15,19 +15,22 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "App Cidadão",
+    title: "Defensoria Pública MT Cidadão - Mobile",
     description:
-      "Aplicativo mobile para facilitar o acesso dos cidadãos aos serviços públicos",
+      "Acesse serviços e informações da Defensoria Pública de MT de forma rápida e fácil!\nSimplificamos o seu acesso à justiça com o app da Defensoria Pública de Mato Grosso. Consulte processos, agende atendimentos e obtenha orientações jurídicas diretamente pelo seu celular. Fácil de usar, mesmo para quem não é familiarizado com aplicativos.",
     image: "/images/mobile-cidadao.png",
     details: [
-      "Interface intuitiva e moderna",
-      "Integração com sistemas governamentais",
-      "Notificações em tempo real",
-      "Agendamento de serviços",
+      "Solicitação e acompanhamento de agendamento.",
+      "Acompanhe seus processos.",
+      "Emissão de Hipossuficiência.",
+      "Canal de Ouvidoria",
+      "Encontre a Defensoria mais próxima de você",
+      "Fique por dentro das principais notícias",
+
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1556742205-e7530469f4eb?auto=format&fit=crop&w=800&q=80",
+      "/images/PortalCidadao.png",
+      "/images/brandbird.png",
     ],
   },
   {
@@ -184,9 +187,8 @@ function Drawer() {
         <div className="fixed inset-0 bg-black/50 z-50">
           <div
             ref={drawerRef}
-            className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-zinc-900 shadow-lg transform transition-all duration-300 ease-in-out ${
-              isOpening ? "translate-x-0" : "translate-x-full"
-            }`}
+            className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-zinc-900 shadow-lg transform transition-all duration-300 ease-in-out ${isOpening ? "translate-x-0" : "translate-x-full"
+              }`}
           >
             <div className="h-full overflow-y-auto">
               <div className="p-6">

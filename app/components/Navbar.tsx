@@ -42,7 +42,7 @@ export default function Navbar() {
     { href: "#resumo", label: "Resumo" },
     { href: "#servicos", label: "Serviços" },
     { href: "#habilidades", label: "Habilidades" },
-    { href: "#projetos", label: "Projetos" },
+    { href: "#projects", label: "Projetos" },
     { href: "#contato", label: "Contato" },
   ];
 

@@ -26,19 +26,15 @@ const projects: Project[] = [
       "Canal de Ouvidoria",
       "Encontre a Defensoria mais próxima de você",
       "Fique por dentro das principais notícias",
-
     ],
-    gallery: [
-      "/images/PortalCidadao.png",
-      "/images/brandbird.png",
-    ],
+    gallery: ["/images/PortalCidadao.png"],
   },
   {
     id: 2,
     title: "Portal Cidadão",
     description:
       "Portal web responsivo para acesso a serviços e informações municipais",
-    image: "/images/servidor.png",
+    image: "/images/brandbird.png",
     details: [
       "Design responsivo",
       "Acessibilidade WCAG 2.1",
@@ -69,20 +65,17 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Portal Servidor",
+    title: "CloudSense",
     description:
       "Sistema interno para gestão de recursos humanos e processos administrativos",
-    image: "/images/CloudSense.png",
+    image: "/images/cloudesense.png",
     details: [
       "Gestão de documentos",
       "Workflow automatizado",
       "Relatórios em tempo real",
       "Integração com sistemas legados",
     ],
-    gallery: [
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
-    ],
+    gallery: ["/images/cloudsense.png"],
   },
   {
     id: 5,
@@ -187,8 +180,9 @@ function Drawer() {
         <div className="fixed inset-0 bg-black/50 z-50">
           <div
             ref={drawerRef}
-            className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-zinc-900 shadow-lg transform transition-all duration-300 ease-in-out ${isOpening ? "translate-x-0" : "translate-x-full"
-              }`}
+            className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-zinc-900 shadow-lg transform transition-all duration-300 ease-in-out ${
+              isOpening ? "translate-x-0" : "translate-x-full"
+            }`}
           >
             <div className="h-full overflow-y-auto">
               <div className="p-6">

@@ -18,7 +18,7 @@ const projects: Project[] = [
     title: "Defensoria Pública MT Cidadão - Mobile",
     description:
       "Acesse serviços e informações da Defensoria Pública de MT de forma rápida e fácil!\nSimplificamos o seu acesso à justiça com o app da Defensoria Pública de Mato Grosso. Consulte processos, agende atendimentos e obtenha orientações jurídicas diretamente pelo seu celular. Fácil de usar, mesmo para quem não é familiarizado com aplicativos.",
-    image: "/images/mobile-cidadao.png",
+    image: "/images/Cover.png",
     details: [
       "Solicitação e acompanhamento de agendamento.",
       "Acompanhe seus processos.",
@@ -34,7 +34,7 @@ const projects: Project[] = [
     title: "Portal Cidadão",
     description:
       "Portal web responsivo para acesso a serviços e informações municipais",
-    image: "/images/brandbird.png",
+    image: "/images/gabinete.png",
     details: [
       "Design responsivo",
       "Acessibilidade WCAG 2.1",
@@ -51,7 +51,7 @@ const projects: Project[] = [
     title: "Portal Servidor",
     description:
       "Sistema interno para gestão de recursos humanos e processos administrativos",
-    image: "/images/CloudSense.png",
+    image: "/images/PortServidor.png",
     details: [
       "Gestão de documentos",
       "Workflow automatizado",
@@ -68,7 +68,7 @@ const projects: Project[] = [
     title: "CloudSense",
     description:
       "Sistema interno para gestão de recursos humanos e processos administrativos",
-    image: "/images/cloudesense.png",
+    image: "/images/CloudSense02.png",
     details: [
       "Gestão de documentos",
       "Workflow automatizado",
@@ -180,9 +180,8 @@ function Drawer() {
         <div className="fixed inset-0 bg-black/50 z-50">
           <div
             ref={drawerRef}
-            className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-zinc-900 shadow-lg transform transition-all duration-300 ease-in-out ${
-              isOpening ? "translate-x-0" : "translate-x-full"
-            }`}
+            className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-zinc-900 shadow-lg transform transition-all duration-300 ease-in-out ${isOpening ? "translate-x-0" : "translate-x-full"
+              }`}
           >
             <div className="h-full overflow-y-auto">
               <div className="p-6">

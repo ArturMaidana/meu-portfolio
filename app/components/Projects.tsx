@@ -18,7 +18,7 @@ const projects: Project[] = [
     title: "Defensoria Pública MT Cidadão - Mobile",
     description:
       "Acesse serviços e informações da Defensoria Pública de MT de forma rápida e fácil!\nSimplificamos o seu acesso à justiça com o app da Defensoria Pública de Mato Grosso. Consulte processos, agende atendimentos e obtenha orientações jurídicas diretamente pelo seu celular. Fácil de usar, mesmo para quem não é familiarizado com aplicativos.",
-    image: "/images/Cover.png",
+    image: "/images/BannerCid.png",
     details: [
       "Solicitação e acompanhamento de agendamento.",
       "Acompanhe seus processos.",
@@ -27,40 +27,43 @@ const projects: Project[] = [
       "Encontre a Defensoria mais próxima de você",
       "Fique por dentro das principais notícias",
     ],
-    gallery: ["/images/PortalCidadao.png"],
+    gallery: ["/images/BannerCid.png"],
   },
   {
     id: 2,
-    title: "Portal Cidadão",
+    title: "Assistente de Gabinete",
     description:
-      "Portal web responsivo para acesso a serviços e informações municipais",
+      "Desenvolvido para auxiliar os gabinetes da Defensoria Pública de Mato Grosso, o assistente de gabinete reúne ferramentas essenciais para otimizar o trabalho dos defensores e suas equipes. Com transcrição automatizada, inteligência artificial e consulta rápida de processos, o serviço facilita o acesso a informações e melhora a produtividade no dia a dia.",
     image: "/images/gabinete.png",
     details: [
-      "Design responsivo",
-      "Acessibilidade WCAG 2.1",
-      "Múltiplos idiomas",
-      "Dashboard personalizado",
+      "Transcrições",
+      "IA para defensores",
+      "Consulta de Processos",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      "/images/01.png",
+      "/images/02.png",
+      "/images/03.png",
+
     ],
   },
   {
     id: 3,
-    title: "Portal Servidor",
+    title: "Portal Servidor Versão Mobile",
     description:
-      "Sistema interno para gestão de recursos humanos e processos administrativos",
+      "O Portal do Servidor ainda está em fase de protótipo, com novas funcionalidades sendo desenvolvidas para melhorar a experiência dos defensores e servidores da Defensoria Pública de Mato Grosso. Mesmo em andamento, já dispõe de serviços essenciais para o dia a dia.",
     image: "/images/PortServidor.png",
     details: [
-      "Gestão de documentos",
-      "Workflow automatizado",
-      "Relatórios em tempo real",
-      "Integração com sistemas legados",
+      "Visualização de peticionamentos",
+      "Audiências agendadas",
+      "Vade Mecum",
+      "Avisos pendentes",
+      "Dúvidas do Jurídico ",
+      "Ementário",
+
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+      "images/BannerMobile.png"
     ],
   },
   {
@@ -79,19 +82,22 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    title: "Portal Servidor",
+    title: "Portal Servidor Versão Web",
     description:
-      "Sistema interno para gestão de recursos humanos e processos administrativos",
-    image: "/images/CloudSense.png",
+      "A versão web do Portal do Servidor oferece ainda mais ferramentas para os defensores e servidores da Defensoria Pública de Mato Grosso. Além dos serviços já disponíveis na versão mobile, a plataforma para desktop conta com inteligência artificial para consultas jurídicas e um painel com as principais notícias internas.",
+    image: "/images/LaptopServidor.png",
     details: [
-      "Gestão de documentos",
-      "Workflow automatizado",
-      "Relatórios em tempo real",
-      "Integração com sistemas legados",
+      "Visualização de peticionamentos",
+      "Audiências agendadas",
+      "Vade Mecum",
+      "Avisos pendentes",
+      "Dúvidas do Jurídico ",
+      "Ementário",
+      "Inteligência Artificial",
+      "Notícias Internas"
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+      "images/HomeServidor.png",
     ],
   },
   {
@@ -99,7 +105,7 @@ const projects: Project[] = [
     title: "Portal Servidor",
     description:
       "Sistema interno para gestão de recursos humanos e processos administrativos",
-    image: "/images/CloudSense.png",
+    image: "/images/Savitar.png",
     details: [
       "Gestão de documentos",
       "Workflow automatizado",
@@ -163,14 +169,14 @@ function Drawer() {
                 alt={project.title}
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              {/* <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <button
                   onClick={() => setSelectedProject(project)}
                   className="bg-amber-500 text-black px-6 py-2 rounded-full font-medium hover:bg-amber-400 transition-colors"
                 >
                   Ver Projeto
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

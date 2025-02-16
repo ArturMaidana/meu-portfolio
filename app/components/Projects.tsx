@@ -35,17 +35,8 @@ const projects: Project[] = [
     description:
       "Desenvolvido para auxiliar os gabinetes da Defensoria Pública de Mato Grosso, o assistente de gabinete reúne ferramentas essenciais para otimizar o trabalho dos defensores e suas equipes. Com transcrição automatizada, inteligência artificial e consulta rápida de processos, o serviço facilita o acesso a informações e melhora a produtividade no dia a dia.",
     image: "/images/gabinete.png",
-    details: [
-      "Transcrições",
-      "IA para defensores",
-      "Consulta de Processos",
-    ],
-    gallery: [
-      "/images/01.png",
-      "/images/02.png",
-      "/images/03.png",
-
-    ],
+    details: ["Transcrições", "IA para defensores", "Consulta de Processos"],
+    gallery: ["/images/01.png", "/images/02.png", "/images/03.png"],
   },
   {
     id: 3,
@@ -60,11 +51,8 @@ const projects: Project[] = [
       "Avisos pendentes",
       "Dúvidas do Jurídico ",
       "Ementário",
-
     ],
-    gallery: [
-      "images/BannerMobile.png"
-    ],
+    gallery: ["images/BannerMobile.png"],
   },
   {
     id: 4,
@@ -94,11 +82,9 @@ const projects: Project[] = [
       "Dúvidas do Jurídico ",
       "Ementário",
       "Inteligência Artificial",
-      "Notícias Internas"
+      "Notícias Internas",
     ],
-    gallery: [
-      "images/HomeServidor.png",
-    ],
+    gallery: ["images/HomeServidor.png"],
   },
   {
     id: 6,
@@ -149,7 +135,7 @@ function Drawer() {
   }, [selectedProject]);
 
   return (
-    <div id="projects" className="min-h-screen text-white">
+    <div id="projetos" className="min-h-screen text-white">
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Projetos</h2>
@@ -186,8 +172,9 @@ function Drawer() {
         <div className="fixed inset-0 bg-black/50 z-50">
           <div
             ref={drawerRef}
-            className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-zinc-900 shadow-lg transform transition-all duration-300 ease-in-out ${isOpening ? "translate-x-0" : "translate-x-full"
-              }`}
+            className={`absolute right-0 top-0 h-full w-full max-w-2xl bg-zinc-900 shadow-lg transform transition-all duration-300 ease-in-out ${
+              isOpening ? "translate-x-0" : "translate-x-full"
+            }`}
           >
             <div className="h-full overflow-y-auto">
               <div className="p-6">

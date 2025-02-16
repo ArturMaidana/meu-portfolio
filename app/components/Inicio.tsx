@@ -3,6 +3,8 @@
 import { Briefcase, Code2 } from "lucide-react";
 import Link from "next/link";
 
+import Image from "next/image";
+
 export default function Inicio() {
   return (
     <section
@@ -37,10 +39,13 @@ export default function Inicio() {
 
         <div className="flex-1">
           <div className="relative">
-            <img
+            <Image
               src="/images/Development-cuate.png"
               alt="Web Development Illustration"
-              className="w-full h-auto rounded-lg opacity-80"
+              width={500} // Defina a largura real da imagem
+              height={300} // Defina a altura real da imagem
+              layout="responsive"
+              className="rounded-lg opacity-80"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent rounded-lg"></div>
 

@@ -1,4 +1,4 @@
-export default function () {
+export default function ResumeSection() {
   return (
     <section
       id="resumo"

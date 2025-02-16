@@ -2,10 +2,11 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { X } from "lucide-react";
+import Image from "next/image";
 
 interface Project {
   id: number;
-  // title: string;
+  title: string;
   // description: string;
   image: string;
   // details: string[];
@@ -15,7 +16,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    // title: "Defensoria Pública MT Cidadão - Mobile",
+    title: "Defensoria Pública MT Cidadão - Mobile",
     // description:
     //   "Acesse serviços e informações da Defensoria Pública de MT de forma rápida e fácil!\nSimplificamos o seu acesso à justiça com o app da Defensoria Pública de Mato Grosso. Consulte processos, agende atendimentos e obtenha orientações jurídicas diretamente pelo seu celular. Fácil de usar, mesmo para quem não é familiarizado com aplicativos.",
     image: "/images/BannerCid.png",
@@ -31,7 +32,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    // title: "Assistente de Gabinete",
+    title: "Assistente de Gabinete",
     // description:
     //   "Desenvolvido para auxiliar os gabinetes da Defensoria Pública de Mato Grosso, o assistente de gabinete reúne ferramentas essenciais para otimizar o trabalho dos defensores e suas equipes. Com transcrição automatizada, inteligência artificial e consulta rápida de processos, o serviço facilita o acesso a informações e melhora a produtividade no dia a dia.",
     image: "/images/gabinete.png",
@@ -40,7 +41,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    // title: "Portal Servidor Versão Mobile",
+    title: "Portal Servidor Versão Mobile",
     // description:
     //   "O Portal do Servidor ainda está em fase de protótipo, com novas funcionalidades sendo desenvolvidas para melhorar a experiência dos defensores e servidores da Defensoria Pública de Mato Grosso. Mesmo em andamento, já dispõe de serviços essenciais para o dia a dia.",
     image: "/images/PortServidor.png",
@@ -56,7 +57,7 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    // title: "CloudSense",
+    title: "CloudSense",
     // description:
     //   "Sistema interno para gestão de recursos humanos e processos administrativos",
     image: "/images/CloudSense02.png",
@@ -70,7 +71,7 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    // title: "Portal Servidor Versão Web",
+    title: "Portal Servidor Versão Web",
     // description:
     //   "A versão web do Portal do Servidor oferece ainda mais ferramentas para os defensores e servidores da Defensoria Pública de Mato Grosso. Além dos serviços já disponíveis na versão mobile, a plataforma para desktop conta com inteligência artificial para consultas jurídicas e um painel com as principais notícias internas.",
     image: "/images/LaptopServidor.png",
@@ -88,7 +89,7 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    // title: "Portal Servidor",
+    title: "Portal Servidor",
     // description:
     //   "Sistema interno para gestão de recursos humanos e processos administrativos",
     image: "/images/Savitar.png",
@@ -147,10 +148,12 @@ function Drawer() {
               key={project.id}
               className="group relative overflow-hidden rounded-lg"
             >
-              <img
+              <Image
                 src={project.image}
-                // alt={project.title}
+                alt={project.title}
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                width={500} // Defina a largura real da imagem
+                height={300} // Defina a altura real da imagem
               />
               {/* <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <button
@@ -203,7 +206,7 @@ function Drawer() {
                     <h3 className="text-xl font-semibold mb-3">Galeria</h3>
                     <div className="grid grid-cols-1 gap-4">
                       {selectedProject.gallery.map((image, index) => (
-                        <img
+                        <Image
                           key={index}
                           src={image}
                           alt={`${selectedProject.title} - Imagem ${index + 1}`}

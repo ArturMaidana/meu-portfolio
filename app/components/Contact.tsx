@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -47,10 +48,12 @@ export default function Contact() {
 
       <div className="grid md:grid-cols-2 gap-12">
         <div>
-          <img
+          <Image
             src="/images/Mail-bro.png"
             alt="Contact Illustration"
             className="w-full h-auto"
+            width={500} // Defina a largura real da imagem
+            height={300} // Defina a altura real da imagem
           />
         </div>
 

@@ -1,12 +1,10 @@
 import {
-  Gift,
   LayoutTemplate,
   Lightbulb,
   Palette,
   Figma,
   SearchCode,
   TabletSmartphone,
-  FlaskRound as Flask,
 } from "lucide-react";
 
 export default function Services() {

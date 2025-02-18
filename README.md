@@ -1,2 +1,2 @@
 # meu-portfolio
- Portfolio feito com NextJs
+ Portfolio feito com NextJss

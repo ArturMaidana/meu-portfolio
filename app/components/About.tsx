@@ -56,7 +56,7 @@ export default function About() {
           </div>
 
           <Link
-            href="/Curriculo.pdf"
+            href="/CurriculoArtur.pdf"
             download
             target="_blank"
             rel="noopener noreferrer"

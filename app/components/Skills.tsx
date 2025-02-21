@@ -24,12 +24,12 @@ export default function Skills() {
 
       <div className="grid md:grid-cols-2 gap-8">
         {[
-          { name: "Flutter", value: 90 },
+          { name: "Flutter", value: 80 },
           { name: "React", value: 85 },
           { name: "Nodejs", value: 95 },
           { name: "Next.JS", value: 90 },
           { name: "Python", value: 70 },
-          { name: "Figma", value: 80 },
+          { name: "Figma", value: 90 },
         ].map((skill, index) => (
           <div key={index} className="space-y-2">
             <div className="flex justify-between">

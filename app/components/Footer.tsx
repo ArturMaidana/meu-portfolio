@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-900">
+    <footer className="bg-zinc-900 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -77,7 +77,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-center gap-3 text-white/80">
                 <MapPin className="text-amber-500" />
-                1409 Princesa do Sol, Várzea Grande, Cuiabá, Mato grosso, BR
+                Cuiabá, Mato grosso, Brasil
               </li>
               <li className="flex items-center gap-3 text-white/80">
                 <Phone className="text-amber-500" />

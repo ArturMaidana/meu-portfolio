@@ -3,6 +3,8 @@
 import { Briefcase, Code2 } from "lucide-react";
 import Link from "next/link";
 
+import Image from "next/image";
+
 export default function Inicio() {
   return (
     <section
@@ -20,13 +22,14 @@ export default function Inicio() {
           <p className="text-3xl text-white/80">Um Web Designer Freelancer</p>
           <div className="flex gap-4 pt-4">
             <Link
-              href="#contato"
+              href="https://www.linkedin.com/in/artur-maidana/"
+              target="_blank"
               className="bg-amber-500 text-black px-8 py-3 rounded-full font-medium hover:bg-amber-400 transition-colors"
             >
               Contrate-me
             </Link>
             <Link
-              href="#trabalhos"
+              href="#projetos"
               className="border border-white/20 text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition-colors"
             >
               Meus Trabalhos
@@ -36,10 +39,13 @@ export default function Inicio() {
 
         <div className="flex-1">
           <div className="relative">
-            <img
+            <Image
               src="/images/Development-cuate.png"
               alt="Web Development Illustration"
-              className="w-full h-auto rounded-lg opacity-80"
+              width={500} // Defina a largura real da imagem
+              height={300} // Defina a altura real da imagem
+              layout="responsive"
+              className="rounded-lg opacity-80"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent rounded-lg"></div>
 
